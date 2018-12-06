@@ -8,7 +8,7 @@
 
     <div id="app">
        <header-component></header-component>
-       <body-component></body-component>
+       <body-component v-bind:list='list'></body-component>
        <footer-component></footer-component>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -19,7 +19,19 @@
         var app = new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue.js!'
+                message: 'Welcome',
+                list: [
+                    {num:1},
+                    {num:2},
+                    {num:3},
+                    {num:4},
+                    {num:5},
+                    {num:6},
+                    {num:7},
+                    {num:8},
+                    {num:9},
+                    {num:10},
+                ]
             },
             methods: {
                
